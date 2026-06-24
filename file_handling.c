@@ -1,4 +1,4 @@
-// 1.Create a file named test.txt and
+// 1.Create a file named test.txt and write the text Hello Linux into it.
 
 write the text &quot;Hello Linux&quot; into it.
 #include <stdio.h>
