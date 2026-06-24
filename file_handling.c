@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main() {
+    int fd;
+
+    fd = open("test.txt", O_CREAT | O_WRONLY | O_TRUNC, 0644);
+
+    if (fd == -1) {
+        perror("Error opening file");
+        return 1;
+    }
+
+    write(fd, "Hello Linux", 11);
+
+    close(fd);
+
+    printf("Data written successfully to test.txt\n");
+
+    return 0;
+}
