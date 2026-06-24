@@ -1,2 +1,0 @@
-Data written successfully to test.txt
-Hello Linux
